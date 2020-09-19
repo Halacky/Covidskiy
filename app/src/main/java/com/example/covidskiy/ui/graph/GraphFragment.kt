@@ -21,7 +21,7 @@ class GraphFragment : Fragment() {
     ): View? {
         graphViewModel =
             ViewModelProviders.of(this).get(GraphViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+        val root = inflater.inflate(R.layout.fragment_graph, container, false)
         val textView: TextView = root.findViewById(R.id.text_gallery)
         graphViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
