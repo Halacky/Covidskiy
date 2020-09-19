@@ -7,7 +7,9 @@ import androidx.lifecycle.ViewModel
 class NewsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Сюда новости(это главная страница)"
+        value = "Заразилось: 5000 \n" +
+                "Выздоровело: 4000 \n" +
+                "Умерло: 300"
     }
     val text: LiveData<String> = _text
 }

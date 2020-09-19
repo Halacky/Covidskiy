@@ -6,16 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".ui.news.NewsFragment">
 
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="385dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        tools:context="com.appsdeveloperblog.kotlin.examples.CardViewExample">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:clickable="true"
+            app:cardBackgroundColor="#22D64A">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Какая-то хорошая новость от крутых ученных, про COVID-19."
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
